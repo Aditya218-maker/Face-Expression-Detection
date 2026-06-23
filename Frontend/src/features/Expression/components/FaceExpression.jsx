@@ -70,11 +70,11 @@ export default function FaceExpression() {
 
           let currentExpression = 'Neutral';
 
-          if (smileLeft > 0.4 && smileRight > 0.4) {
+          if (smileLeft > 0.5 && smileRight > 0.5) {
             currentExpression = 'Happy 😄';
-          } else if (jawOpen > 0.5 && browUp > 0.3) {
+          } else if (jawOpen > 0.2 && browUp > 0.2) {
             currentExpression = 'Surprised 😲';
-          } else if (frownLeft > 0.4 && frownRight > 0.4) {
+          } else if (frownLeft > 0.2 && frownRight > 0.2) {
             currentExpression = 'Sad 😢';
           }
           
